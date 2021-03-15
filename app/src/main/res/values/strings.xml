@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Data Diri</string>
+
+    <string-array name="pilihkota">
+        <item>Surabaya</item>
+        <item>Sidoarjo</item>
+        <item>Gresik</item>
+        <item>Malang</item>
+        <item>Mojokerto</item>
+        <item>Pasuruan</item>
+        <item>Jombang</item>
+        <item>Tuban</item>
+        <item>Lamongan</item>
+        <item>Madiun</item>
+        <item>Bojonegoro</item>
+        <item>Ponorogo</item>
+        <item>Tulungagung</item>
+    </string-array>
+</resources>

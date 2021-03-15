@@ -1,0 +1,229 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/labelnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="FORM"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labelnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelnim"
+            android:layout_marginTop="7dp"
+            android:text="Nama Lengkap:"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/fieldnama"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fieldalamat"
+            android:layout_below="@+id/labelnim"
+            android:inputType="text" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/labelalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelnama"
+            android:layout_marginTop="25dp"
+            android:text="Alamat"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/fieldalamat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fieldnama"
+            android:layout_toRightOf="@+id/labelhobi"
+            android:inputType="text" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/labelkota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelalamat"
+            android:layout_marginTop="7dp"
+            android:text="Kota :"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/kota"
+            android:entries="@array/pilihkota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelkota" >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/tv_dateresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kota"
+            android:layout_marginTop="7dp"
+            android:text="Tanggal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labelemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dateresult"
+            android:layout_marginTop="25dp"
+            android:text="Email :"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/fieldemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dateresult"
+            android:layout_toRightOf="@+id/labelemail"
+            android:inputType="textEmailAddress" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/labeljk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelemail"
+            android:layout_marginTop="20dp"
+            android:text="Jenis Kelamin :"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/groupjk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labeljk"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <RadioButton
+                android:id="@+id/radiolk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radiopr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/labelhobi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupjk"
+            android:layout_marginTop="7dp"
+            android:text="Hobi :"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cekboxgam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelhobi"
+            android:layout_marginTop="5dp"
+            android:text="Gamming"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cekboxmov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cekboxgam"
+            android:layout_marginTop="5dp"
+            android:text="Movies"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cekboxspo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cekboxmov"
+            android:layout_marginTop="5dp"
+            android:text="Sports"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/tomboltampil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cekboxspo"
+            android:layout_marginTop="5dp"
+            android:text="CETAK"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/outputnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tomboltampil"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/outputemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/outputnama"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/outputhobi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/outputemail"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/outputjk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/outputhobi"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/outputalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/outputjk"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
